@@ -10,15 +10,33 @@ a
   @extend .fw-reset
 
 .container
-  width: 1283px
+  width: 1266px
   margin-left: auto
   margin-right: auto
   position: relative
   padding: 0 15px
-
+  &.middle-container
+    width: 1045px
+  &.small-container
+    width: 822px
 //______________________________ HEADER ___________________________________
 
+.header
+  padding-top: 60px
+  padding-bottom: 30px
+  border: 10px solid $colorRed
+//______________________________ SECTIONS  _____________________________
 
-//______________________________ FIRST SCREEN _____________________________
+.advantages
+  padding-top: 115px
+  padding-bottom: 115px
+  background-color: $colorGrayTint
+  &__right-list-item, &__left-list-item
+    padding-left: 39px
+
+.feedback
+  &__content-wrapper
+    padding-top: 80px
+    padding-bottom: 115px
 
 // ____________________________ FOOTER  ___________________________________
