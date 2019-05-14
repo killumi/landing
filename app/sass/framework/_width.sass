@@ -1,0 +1,56 @@
+.fw-max-width-percent-100
+  max-width: 100%
+
+.fw-width-auto
+  width: auto
+
+.fw-width-fit-content
+  width: fit-content
+
+@each $value in $width
+  .fw-width-#{$value}
+    width: #{$value}px
+
+  .fw-max-width-#{$value}
+    max-width: #{$value}px
+
+  .fw-min-width-#{$value}
+    min-width: #{$value}px
+
+@each $value in $width_grid
+  .fw-width-#{nth($value, 1)}-#{nth($value, 2)}
+    width: nth($value,1) / nth($value,2) * 100%
+
+@each $value in $width
+  @media screen and (max-width: 950px)
+    .fw-width-#{$value}\@xl
+      width: #{$value}px
+
+    .fw-max-width-#{$value}\@xl
+      max-width: #{$value}px
+
+@each $value in $width_grid
+  @media screen and (max-width: 950px)
+    .fw-width-#{nth($value, 1)}-#{nth($value, 2)}\@xl
+      width: nth($value,1) / nth($value,2) * 100%
+
+@media screen and (max-width: 950px)
+  .fw-width-auto\@xl
+    width: auto
+
+@each $value in $width
+  @media screen and (max-width: 767px)
+    .fw-width-#{$value}\@xs
+      width: #{$value}px
+
+    .fw-max-width-#{$value}\@xs
+      max-width: #{$value}px
+
+@each $value in $width_grid
+  @media screen and (max-width: 767px)
+    .fw-width-#{nth($value, 1)}-#{nth($value, 2)}\@xs
+      width: nth($value,1) / nth($value,2) * 100%
+
+@media screen and (max-width: 767px)
+  .fw-width-auto\@xs
+    width: auto

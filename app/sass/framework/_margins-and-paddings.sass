@@ -1,0 +1,148 @@
+.fw-margin-auto
+    margin: auto
+
+.fw-mt-auto
+    margin-top: auto
+
+.fw-mb-auto
+    margin-bottom: auto
+
+.fw-mr-auto
+    margin-right: auto
+
+.fw-ml-auto
+    margin-left: auto
+
+@each $value in $margin
+    .fw-margin-#{$value}
+        margin: #{$value}px
+
+    .fw-mt-#{$value}
+        margin-top: #{$value}px
+
+    .fw-mb-#{$value}
+        margin-bottom: #{$value}px
+
+    .fw-ml-#{$value}
+        margin-left: #{$value}px
+
+    .fw-mr-#{$value}
+        margin-right: #{$value}px
+
+    .fw-mt-mb-#{$value}
+        margin: #{$value}px 0
+
+    .fw-ml-mr-#{$value}
+        margin: 0 #{$value}px
+
+@each $value in $margin
+    @media screen and (max-width: 950px)
+        .fw-margin-#{$value}\@xl
+            margin: #{$value}px
+            
+        .fw-mt-#{$value}\@xl
+            margin-top: #{$value}px
+
+        .fw-mb-#{$value}\@xl
+            margin-bottom: #{$value}px
+
+        .fw-ml-#{$value}\@xl
+            margin-left: #{$value}px
+
+        .fw-mr-#{$value}\@xl
+            margin-right: #{$value}px
+
+@each $value in $margin
+    @media screen and (max-width: 767px)
+        .fw-margin-#{$value}\@xs
+            margin: #{$value}px
+
+        .fw-mt-#{$value}\@xs
+            margin-top: #{$value}px
+
+        .fw-mb-#{$value}\@xs
+            margin-bottom: #{$value}px
+
+        .fw-ml-#{$value}\@xs
+            margin-left: #{$value}px
+
+        .fw-mr-#{$value}\@xs
+            margin-right: #{$value}px
+
+@each $value in $marginInverse
+    .fw-mt-inverse-#{$value}
+        margin-top: -#{$value}px
+
+    .fw-mb-inverse-#{$value}
+        margin-bottom: -#{$value}px
+
+    .fw-ml-inverse-#{$value}
+        margin-left: -#{$value}px
+
+    .fw-mr-inverse-#{$value}
+        margin-right: -#{$value}px
+
+@each $value in $marginInverse
+    @media screen and (max-width: 767px)
+        .fw-mt-inverse-#{$value}\@xs
+            margin-top: -#{$value}px
+
+        .fw-mb-inverse-#{$value}\@xs
+            margin-bottom: -#{$value}px
+
+        .fw-ml-inverse-#{$value}\@xs
+            margin-left: -#{$value}px
+
+        .fw-mr-inverse-#{$value}\@xs
+            margin-right: -#{$value}px
+
+@each $value in $padding
+    .fw-padding-#{$value}
+        padding: #{$value}px
+
+@each $value in $padding
+    .fw-pt-#{$value}
+        padding-top: #{$value}px
+
+    .fw-pb-#{$value}
+        padding-bottom: #{$value}px
+
+    .fw-pl-#{$value}
+        padding-left: #{$value}px
+
+    .fw-pr-#{$value}
+        padding-right: #{$value}px
+
+@each $value in $padding
+    @media screen and (max-width: 950px)
+        .fw-padding-#{$value}\@xl
+            padding: #{$value}px
+
+        .fw-pt-#{$value}\@xl
+            padding-top: #{$value}px
+
+        .fw-pb-#{$value}\@xl
+            padding-bottom: #{$value}px
+
+        .fw-pl-#{$value}\@xl
+            padding-left: #{$value}px
+
+        .fw-pr-#{$value}\@xl
+            padding-right: #{$value}px
+
+@each $value in $padding
+    @media screen and (max-width: 767px)
+        .fw-padding-#{$value}\@xs
+            padding: #{$value}px
+
+        .fw-pt-#{$value}\@xs
+            padding-top: #{$value}px
+
+        .fw-pb-#{$value}\@xs
+            padding-bottom: #{$value}px
+
+        .fw-pl-#{$value}\@xs
+            padding-left: #{$value}px
+
+        .fw-pr-#{$value}\@xs
+            padding-right: #{$value}px

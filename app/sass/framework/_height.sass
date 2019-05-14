@@ -1,0 +1,42 @@
+.fw-max-height-percent-100
+  max-height: 100%
+
+.fw-height-fit-content
+  height: fit-content
+
+@each $value in $height_grid
+  .fw-height-#{nth($value, 1)}-#{nth($value, 2)}
+    height: nth($value,1) / nth($value,2) * 100%
+
+@each $value in $height
+  .fw-height-#{$value}
+    height: #{$value}px
+
+  .fw-max-height-#{$value}
+    max-height: #{$value}px
+
+  .fw-min-height-#{$value}
+    min-height: #{$value}px
+
+  .fw-height-100vh-min-#{$value}
+    height: calc(100vh - #{$value}px)
+
+@each $height-proportion in $height
+  .fw-height-proportional-#{$height-proportion}
+    position: relative
+
+    &::after
+      padding-bottom: $height-proportion * 1%
+      content: ''
+      display: block
+
+    > *
+      &:first-child
+        position: absolute!important
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+
+      &:not(:first-child)
+        display: none

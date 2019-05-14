@@ -1,0 +1,53 @@
+.fw-reset
+  margin: 0
+  font-weight: normal
+  padding: 0
+  list-style: none
+  background-color: transparent
+  border: none
+  font-family: inherit
+  color: inherit
+  text-decoration: inherit
+  outline: none
+
+@import "../colors"
+@import "../variables"
+@import "functions"
+@import "viewports"
+@import "display"
+@import "backgrounds-and-colors"
+@import "width"
+@import "height"
+@import "grid"
+@import "margins-and-paddings"
+@import "flex"
+@import "fonts"
+@import "border"
+@import "visibilities"
+@import "text"
+
+@each $value in $top
+  .fw-top-#{$value}
+    top: $value+px
+
+@each $value in $bottom
+  .fw-bottom-#{$value}
+    bottom: $value+px
+
+@each $value in $left
+  .fw-left-#{$value}
+    left: $value+px
+
+@each $value in $right
+  .fw-right-#{$value}
+    right: $value+px
+
+.fw-link
+  &:hover
+    text-decoration: none
+
+  &.fw-text-decoration-none
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline

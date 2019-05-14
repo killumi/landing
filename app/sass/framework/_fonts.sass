@@ -1,0 +1,66 @@
+@each $value in $fz
+  .fw-fz-#{$value}
+    font-size: #{$value}px
+
+@each $value in $fz
+  @media screen and (max-width: 950px)
+    .fw-fz-#{$value}\@xl
+      font-size: #{$value}px
+
+@each $value in $fz
+  @media screen and (max-width: 767px)
+    .fw-fz-#{$value}\@xs
+      font-size: #{$value}px
+
+  @each $value in 0, 16, 18, 20, 22, 25, 30, 40, 42, 54
+    .fw-line-height-#{$value}
+      line-height: #{$value}px
+
+@each $value in '1-2', '1-4', '1-5', '1-7', '2', '1-0'
+  .fw-line-height-#{$value}
+    line-height: unquote(str_replace($value, '-', '.'))
+
+.fw-font-arial
+  font-family: Arial, sans-serif
+@each $value in 100, 300, 400, 500, 600
+  .fw-text-#{$value}
+    font-weight: #{$value}
+
+.fw-text-300
+  font-weight: 300
+
+.fw-text-400
+  font-weight: 400
+
+.fw-text-500
+  font-weight: 500
+
+.fw-text-600
+  font-weight: 600
+
+.fw-font-normal
+  font-weight: normal
+
+.fw-font-italic
+  font-style: italic
+
+.fw-font-semi-bold
+  font-weight: 600
+
+.fw-font-extra-bold
+  font-weight: 800
+
+.fw-text-no-wrap
+  white-space: nowrap
+
+.fw-font-truth-r
+  font-family: 'TruthCyrRegular'
+
+.fw-font-truth-l
+  font-family: 'TruthCyrLight'
+
+.fw-font-truth-m
+  font-family: 'TruthCyrMedium'
+
+.fw-font-roboto-r
+  font-family: 'RobotoRegular'
