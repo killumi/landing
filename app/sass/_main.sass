@@ -10,7 +10,7 @@ a
   @extend .fw-reset
 
 .container
-  width: 1266px
+  width: 1232px
   margin-left: auto
   margin-right: auto
   position: relative
@@ -19,24 +19,307 @@ a
     width: 1045px
   &.small-container
     width: 822px
+
+input
+  height: 65px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding: 20px 40px
+  border: none
+  outline: none
+  font-family: 'CirceRegular'
+  font-size: 17px
+  color: $colorBlack
+  width: 100%
+  &::placeholder
+    color: #333
+    letter-spacing: 1px
+
+.btn
+  &.red-btn
+    height: 65px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $colorWhite
+    background-color: $colorRed
+    border: none
+    outline: none
+    cursor: pointer
+    transition: all .3s ease
+    &:hover
+      background-color: #de0202
+
 //______________________________ HEADER ___________________________________
 
 .header
-  padding-top: 60px
-  padding-bottom: 30px
+  padding-top: 118px
   border: 10px solid $colorRed
+  &__slide-down
+    padding-top: 25px
+    padding-bottom: 26px
+    padding-right: 147px
+  &__content-right-image
+    max-width: 645px
+    display: block
+    margin-right: -20px
+  &__content-right
+    position: absolute
+    right: 0
+    bottom: 0
+  &__description
+    min-width: 734px
+    position: relative
+    z-index: 1
+    &:after
+      content: ''
+      position: absolute
+      top: 100%
+      right: 32px
+      -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%)
+      clip-path: polygon(100% 0, 0 0, 100% 100%)
+      background-color: $colorGray
+      width: 56px
+      height: 54px
+  &__description-icon
+    position: absolute
+    right: -38px
+    top: 110px
+    z-index: 0
+  &__description-second
+    max-width: 640px
+    position: relative
+    z-index: 1
+    margin-top: 34px
+  &__dots
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 0
+  &__content-left
+    z-index: 1
+    position: relative
+  &__online-users-counter
+    position: absolute
+    right: 30px
+    bottom: 0
+    background-color: rgba(#000, .85)
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 7px 7px 0 0
+    padding-left: 38px
+    padding-right: 45px
+    padding-top: 10px
+  &__content-left-icon-crown
+    position: absolute
+    top: -60px
+    left: 50%
+    transform: translateX(-80%)
 //______________________________ SECTIONS  _____________________________
 
 .advantages
-  padding-top: 115px
+  padding-top: 112px
   padding-bottom: 115px
   background-color: $colorGrayTint
-  &__right-list-item, &__left-list-item
-    padding-left: 39px
+  &__right-title
+    margin-left: -8px
+  &__left-list, &__right-list
+    margin-top: 46px
+  &__right-list-item
+    padding-left: 34px
+    letter-spacing: 1px
+    margin-bottom: 37px
+    position: relative
+    line-height: 34px
+    &:before
+      content: ''
+      position: absolute
+      left: -9px
+      top: -11px
+      width: 44px
+      height: 42px
+      background-image: url('../images/minus.svg')
+      -webkit-background-size: cover
+      background-size: cover
+  &__left-list-item
+    letter-spacing: 1px
+    padding-left: 46px
+    margin-bottom: 37px
+    line-height: 34px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 8px
+      top: -18px
+      width: 38px
+      height: 40px
+      background-image: url('../images/checked.svg')
+      -webkit-background-size: cover
+      background-size: cover
 
 .feedback
   &__content-wrapper
     padding-top: 80px
     padding-bottom: 115px
+  &__content-right
+    padding-right: 20px
+  &__dots-bg
+    position: absolute
+    left: 0
+    top: -65px
+  &__book-arrow
+    position: absolute
+    left: 107%
+    top: 39%
+  &__book-triangle
+    position: absolute
+    bottom: 0
+    right: -26px
+    z-index: 0
 
-// ____________________________ FOOTER  ___________________________________
+.feedback-form
+  background-color: $colorPaleBlue
+  padding: 50px 50px 30px 50px
+
+.start-way
+  &__quote
+    position: absolute
+    left: -43px
+    top: -17px
+
+.envy
+  padding-bottom: 100px
+  &__quote
+    position: absolute
+    right: -45px
+    bottom: 0
+
+.progress
+  padding-bottom: 100px
+  &__content
+    margin-bottom: 0
+    padding-top: 60px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      height: 80%
+      top: 100px
+      left: 50%
+      transform: translateX(-50%)
+      width: 2px
+      background-color: $colorRed
+  &__content-item
+    margin-bottom: 0
+    position: relative
+    .progress__content-item-icon
+      position: absolute
+    &:nth-child(odd)
+      padding-right: 95px
+      .progress__content-item-icon
+        top: 20px
+        right: -40px
+    &:nth-child(even)
+      padding-left: 95px
+      .progress__content-item-icon
+        top: -7px
+        left: -40px
+
+.reviews
+  padding: 260px 0
+  &__slide-description
+    max-width: 750px
+    margin-left: auto
+    margin-right: auto
+  &__slider
+    padding: 0 65px
+  &__slide
+    outline: none
+
+.footer
+  padding-top: 45px
+  padding-bottom: 40px
+// ____________________________ SLIDER  ___________________________________
+.slick-dots
+  position: absolute
+  right: 42px
+  top: 0
+.slick-dots li button
+  font-size: 0
+  line-height: 0
+  display: block
+  width: 18px
+  height: 18px
+  padding: 5px
+  cursor: pointer
+  color: transparent
+  border: 0
+  outline: none
+  background: transparent
+  position: relative
+  margin-bottom: 35px
+  &:before
+    position: absolute
+    top: 0
+    left: 0
+    width: 20px
+    height: 20px
+    content: '•'
+    text-align: center
+    background-color: $colorPaleBlue
+    border-radius: 100%
+
+.slick-dots li.slick-active button:before
+  background-color: $colorRed
+
+// _________________________ POPUP _________________________________
+.popup-overlay
+  opacity: 0
+  z-index: -100
+  transition: all .4s ease
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgba(#000, .5)
+  padding: 15px
+  &.active
+    opacity: 1
+    z-index: 9999
+.popup
+  background-color: $colorWhite
+  max-width: 1000px
+  width: 100%
+  padding-bottom: 30px
+  &__close-btn
+    position: absolute
+    right: 46px
+    top: 23px
+    padding: 10px
+    transition: all .3s ease
+    &:hover
+      opacity: .7
+.rules-popup
+  &__items
+    padding-right: 20px
+    overflow: auto
+    max-height: 60vh
+
+.rules-popup__items::-webkit-scrollbar-track
+  background-color: $colorGrayTint
+
+.rules-popup__items::-webkit-scrollbar
+  width: 12px
+  background-color: transparent
+
+.rules-popup__items::-webkit-scrollbar-thumb
+  background-color: $colorPaleBlue
+  border-radius: 10px

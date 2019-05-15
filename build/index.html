@@ -8,53 +8,61 @@
     <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denim BLOG</title>
+    <title>Landing</title>
     <!-- Stylesheets -->
     <!--build:css css/common.css-->
-<link rel="stylesheet" href="fonts/custom-svg-font/css/custom-svg-font.css">
+<link rel="stylesheet" href="vendor/slick.css">
 <link rel="stylesheet" href="css/app.css">
 <!--endbuild--></head>
 <body>
     <div class="main-wrapper">
         <!-- Block content -->
             <!-- Header block -->
-    <header class="header fw-pt-25 fw-pb-25">
+    <header class="header">
   <div class="container">
-    <div class="header__content fw-flex fw-flex-top fw-flex-space-between">
-      <div class="header__content-left">
-        <img src="/images/champion.svg" alt="">
-        <h1 class="header__title fw-font-black-d fw-color-red fw-font-normal fw-fz-85 fw-line-height-85 fw-margin-0 fw-mb-10">Я стал богатым. Как?!!</h1>
+    <div class="header__content fw-flex fw-flex-bottom fw-flex-space-between">
+      <div class="header__content-left fw-relative">
+        <img class="header__content-left-icon-crown" src="./images/champion.svg" alt="">
+        <h1 class="header__title fw-font-black-d fw-white-space fw-letter-spacing-1 fw-color-red fw-font-normal fw-fz-85 fw-line-height-85 fw-margin-0 fw-mb-10">Я стал богатым. Как?!!</h1>
 
         <div class="header__description-wrapper fw-relative">
+          <img src="./images/triangle-1.svg" class="header__description-icon" alt="">
           <div class="header__description fw-fz-17 fw-relative fw-font-circle-r fw-ml-25 fw-pl-57 fw-pt-40 fw-pb-40 fw-pr-50 fw-bg-color-gray">
-            <span class="fw-font-circle-b">Да как ты разбогател, Миша?!!</span> Как ты всего за один год ушел с работы и купил квартиру без ипотеки, а теперь
-            еще и присматриваешь недвижимость за границей? Как у тебя получается по полгода путешествовать? Как ты
-            умудряешься так отлично выглядеть? Как ты сумел достичь всего того, чего так и не удалось достичь нам?
+            <div class="fw-opacity-07 fw-letter-spacing-1">
+              
+              <span class="fw-font-circle-b">Да как ты разбогател, Миша?!!</span> Как ты всего за один год ушел с работы и<br>
+              купил квартиру без ипотеки, а теперь еще и присматриваешь <br>
+              недвижимость за границей? Как у тебя получается по полгода <br>
+              путешествовать? Как ты умудряешься так отлично выглядеть? Как ты <br>
+              сумел достичь всего того, чего так и не удалось достичь нам?
+            </div>
           </div>
 
-          <p class="fw-font-circle-l fw-fz-17 fw-line-height-25 fw-letter-spacing-1 fw-mt-30 fw-mb-30">
+          <p class="header__description-second  fw-font-circle-l fw-fz-17 fw-line-height-25 fw-letter-spacing-1 fw-mt-30 fw-mb-30">
             Эти вопросы я очень часто слышал от своих друзей и знакомых, которые хорошо помнят, каким я был раньше –
             обычным бесперспективным менеджером среднего звена. Теперь они знают мой секрет.
           </p>
+
+          <img class="header__dots" src="./images/dots-bg.png" alt="">
         </div>
 
-        <p class="fw-font-circle-r fw-fz-24 fw-line-height-35 fw-letter-spacing-1 fw-margin-0">
-          Я готов поделиться этим секретом и с вами. Он в книге, которую вы <span class="fw-fz-24 fw-font-circle-b">можете скачать на этой страничке.</span>
+        <p class="header__description-tertiary fw-font-circle-r fw-fz-24 fw-line-height-35 fw-letter-spacing-1 fw-margin-0">
+          Я готов поделиться этим секретом и с вами. Он в книге,<br> которую вы <span class="fw-fz-24 fw-font-circle-b">можете скачать на этой страничке.</span>
         </p>
 
-        <div class="fw-flex fw-flex-middle fw-flex-right">
-          <p class="fw-font-black-d fw-fz-36 fw-line-height-35 fw-margin-0 fw-mr-12 fw-color-red">Листай вниз</p>
-          <img src="/images/vertical-arrow-bottom.svg" alt="">
+        <div class="header__slide-down fw-flex fw-flex-middle fw-flex-right">
+          <p class="fw-font-black-d fw-fz-36 fw-line-height-35 fw-margin-0 fw-mr-12 fw-color-red fw-letter-spacing-1">Листай вниз</p>
+          <img src="./images/vertical-arrow-bottom.svg" alt="">
         </div>
       </div>
 
 
       <div class="header__content-right">
-        <img src="/images/man.png" alt="">
+        <img class="header__content-right-image" src="./images/man.png" alt="">
         <div class="header__online-users-counter fw-flex fw-flex-center fw-flex-middle">
-          <p class="fw-font-black-d fw-color-white fw-fz-26">Сейчас на сайте</p>
-          <span class="fw-font-circle-b fw-color-red fw-fz-28">55</span>
-          <span class="fw-color-white">чел.</span>
+          <p class="fw-font-black-d fw-color-white fw-line-height-30 fw-fz-26 fw-margin-0 fw-white-space">Сейчас на сайте</p>
+          <p class="js-online-counter fw-font-circle-b fw-color-red  fw-line-height-30 fw-fz-28 fw-margin-0 fw-ml-13 fw-mr-7">55</p>
+          <p class="fw-color-white fw-margin-0 fw-font-circle-r fw-line-height-22">чел.</p>
         </div>
       </div>
     </div>
@@ -64,51 +72,51 @@
         <div class="container">
             <div class="advantages__content-wrapper  fw-grid fw-grid-80">
                 <div class="advantages__left fw-width-1-2">
-                    <h1 class="advantages__left-title fw-font-black-d fw-color-green fw-font-normal fw-margin-0 fw-mb-30 fw-fz-65 fw-line-height-85">Мой секрет вам поможет, если вы…</h1>
+                    <div class="advantages__left-title fw-font-black-d fw-color-green fw-font-normal fw-letter-spacing-1 fw-margin-0 fw-mb-30 fw-fz-65 fw-line-height-65">Мой секрет вам поможет, если вы…</div>
                     <ul class="advantages__left-list fw-reset">
-                        <li class="advantages__left-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
+                        <li class="advantages__left-list-item fw-flex fw-flex-bottom fw-flex-left">
                             <span class="fw-fz-17 fw-font-circle-r fw-ml-10 fw-block">Считаете, что достойны большего. НАМНОГО большего</span>
                         </li>
 
-                        <li class="advantages__left-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
+                        <li class="advantages__left-list-item fw-flex fw-flex-bottom fw-flex-left">
                             <span class="fw-fz-17 fw-font-circle-r fw-ml-10 fw-block">Готовы зарабатывать много и зарабатывать буквально каждый день</span>
                         </li>
 
-                        <li class="advantages__left-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
+                        <li class="advantages__left-list-item fw-flex fw-flex-bottom fw-flex-left">
                             <span class="fw-fz-17 fw-font-circle-r fw-ml-10 fw-block">Хотите и готовы изменить себя и свою жизнь</span>
                         </li>
 
-                        <li class="advantages__left-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
+                        <li class="advantages__left-list-item fw-flex fw-flex-bottom fw-flex-left">
                             <span class="fw-fz-17 fw-font-circle-r fw-ml-10 fw-block">Мечтаете о полной финансовой свободе</span>
                         </li>
 
-                        <li class="advantages__left-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
+                        <li class="advantages__left-list-item fw-flex fw-flex-bottom fw-flex-left">
                             <span class="fw-fz-17 fw-font-circle-r fw-ml-10 fw-block">Уверены, что богатство доступно для всех действительно его желающих</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="advantages__right fw-width-1-2">
-                    <h1 class="advantages__right-title fw-font-black-d fw-color-red fw-font-normal fw-margin-0 fw-mb-30 fw-fz-65 fw-line-height-85">Мой секрет окажется бесполезен, если вы…</h1>
+                    <div class="advantages__right-title fw-font-black-d fw-color-red fw-font-normal fw-margin-0 fw-mb-30 fw-letter-spacing-1 fw-fz-65 fw-line-height-65">Мой секрет окажется бесполезен, если вы…</div>
                     <ul class="advantages__right-list fw-reset">
-                        <li class="advantages__right-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
-                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Считаете, что достойны большего. НАМНОГО большего</span>
+                        <li class="advantages__right-list-item fw-flex fw-flex-bottom fw-flex-left">
+                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Cчитаете, что живете хорошо, не хуже других</span>
                         </li>
 
-                        <li class="advantages__right-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
-                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Готовы зарабатывать много и зарабатывать буквально каждый день</span>
+                        <li class="advantages__right-list-item fw-flex fw-flex-bottom fw-flex-left">
+                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Пределом ваших мечтаний является повышение зарплаты или одобрение кредита</span>
                         </li>
 
-                        <li class="advantages__right-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
-                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Хотите и готовы изменить себя и свою жизнь</span>
+                        <li class="advantages__right-list-item fw-flex fw-flex-bottom fw-flex-left">
+                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Уверены, что богатыми становятся лишь избранные счастливчики</span>
                         </li>
 
-                        <li class="advantages__right-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
-                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Мечтаете о полной финансовой свободе</span>
+                        <li class="advantages__right-list-item fw-flex fw-flex-bottom fw-flex-left">
+                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Думаете, что ваши желания и мечты не имеют ровным счетом никакого значения</span>
                         </li>
 
-                        <li class="advantages__right-list-item fw-mb-25 fw-flex fw-flex-bottom fw-flex-left">
-                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Уверены, что богатство доступно для всех действительно его желающих</span>
+                        <li class="advantages__right-list-item fw-flex fw-flex-bottom fw-flex-left">
+                            <span class="fw-fz-17 fw-font-circle-r fw-ml-25 fw-block">Предпочитаете плыть по течению</span>
                         </li>
                     </ul>
                 </div>
@@ -119,32 +127,32 @@
     <div class="feedback">
         <div class="container middle-container">
             <div class="feedback__content-wrapper">
-                <div class="fw-flex fw-flex-middle fw-flex-center fw-pb-45"><img src="/images/champion-2.svg" alt=""></div>
-                <h2 class="fw-font-black-d fw-text-center fw-font-normal fw-fz-65 fw-line-height-65 fw-color-red fw-margin-0 fw-mb-20">Заполните форму, и мой секрет – ваш!</h2>
-                <p class="fw-font-circle-r fw-fz-17 fw-line-height-30 fw-letter-spacing-1 fw-margin-0 fw-text-center fw-opacity-07">
+                <div class="fw-flex fw-flex-middle fw-flex-center fw-pb-45"><img src="./images/champion-2.svg" alt=""></div>
+                <h2 class="feedback__title fw-font-black-d fw-text-center fw-font-normal fw-fz-65 fw-line-height-65 fw-color-red fw-letter-spacing-1 fw-margin-0 fw-mb-20">Заполните форму, и мой секрет – ваш!</h2>
+                <p class="feedback__description fw-mb-65 fw-font-circle-r fw-letter-spacing-1 fw-fz-17 fw-line-height-30 fw-letter-spacing-1 fw-margin-0 fw-text-center fw-opacity-07">
                     Я его вам дарю. Но я прошу вас заполнить эту форму. Зачем? Затем, что это действие требует хоть и небольшого,
                     но усилия. Если вы готовы его приложить, значит, мой секрет вам действительно нужен. Значит, он попадет по адресу!
                 </p>
 
                 <div class="feedback__content fw-flex">
-                    <div class="fw-width-1-2 feedback__content-left fw-relative">
-                        <img src="/images/dots-bg.png" alt="">
-                        <div class="fw-relative">
-                            <img src="/images/book.png" alt="">
-                            <img src="/images/arrow-r.svg" alt="">
-                            <img src="/images/triangle.svg" alt="">
+                    <div class="fw-width-1-2 feedback__content-left fw-relative fw-flex fw-flex-middle fw-flex-left fw-pl-40">
+                        <img class="feedback__dots-bg" src="./images/dots-bg.png" alt="">
+                        <div class="feedback__book fw-relative">
+                            <img class="feedback__book-image fw-z-index-1 fw-relative" src="./images/book.png" alt="">
+                            <img class="feedback__book-arrow" src="./images/arrow-r.svg" alt="">
+                            <img class="feedback__book-triangle" src="./images/triangle.svg" alt="">
                         </div>
                     </div>
                     
                     <div class="fw-width-1-2 feedback__content-right">
-                        <form class="feedback-form">
-                            <div class="feedback-form__field-wrapper fw-mb-20"><input type="text" placeholder="Ваше имя"></div>
-                            <div class="feedback-form__field-wrapper fw-mb-20"><input type="tell:236982738" placeholder="Телефон"></div>
-                            <div class="feedback-form__field-wrapper fw-mb-20"><input type="email" placeholder="E-mail"></div>
-                            <button class="feedback-form__submit-btn fw-fz-20 fw-line-height-30 fw-color-white">Получить секрет</button>
+                        <form class="feedback-form fw-flex fw-flex-column fw-flex-center">
+                            <div class="feedback-form__field-wrapper fw-width-1-1 fw-mb-20"><input type="text" placeholder="Ваше имя"></div>
+                            <div class="feedback-form__field-wrapper fw-width-1-1 fw-mb-20"><input type="tell:236982738" placeholder="Телефон"></div>
+                            <div class="feedback-form__field-wrapper fw-width-1-1 fw-mb-20"><input type="email" placeholder="E-mail"></div>
+                            <button class="feedback-form__submit-btn btn red-btn fw-fz-20 fw-line-height-30 fw-color-white">Получить секрет</button>
                             
-                            <div class="fw-width-1-1 fw-flex fw-flex-center fw-flex-middle">
-                                <span class="fw-fz-14 fw-font-circle-r fw-margin-0 fw-line-height-30 fw-text-underline">Политика конфиденциальности</span>
+                            <div class="fw-width-1-1 fw-flex fw-flex-center fw-flex-middle fw-mt-15">
+                                <span class="js-open-popup fw-fz-14 fw-letter-spacing-1 fw-pointer fw-opacity-05 fw-font-circle-r fw-margin-0 fw-line-height-30 fw-text-underline">Политика конфиденциальности</span>
                             </div>
                         </form>
                     </div>
@@ -153,48 +161,169 @@
         </div>
     </div>
 
-    <div class="start-way fw-pb-50">
+    <div class="start-way fw-pb-55">
         <div class="container small-container">
             <h2 class="start-way__title fw-font-normal fw-text-center fw-font-black-d fw-color-red fw-fz-65 fw-line-height-65 fw-margin-0 fw-mb-50">Все началось с поражения</h2>
 
             <div class="start-way__content fw-relative fw-width-1-1 fw-relative fw-flex fw-flex-column fw-flex-center fw-flex-middle fw-font-circle-r fw-fz-17">
-                <img src="/images/quotes-1.svg" alt="">
-                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-mb-40">Простите, я еще не представился. Меня зовут Михаил Авдеев, мне 28 лет. Родился и вырос в Москве, закончил средненький вуз, был полон амбиций и грандиозных планов, собирался покорить мир… А стал менеджером среднего звена в одной транспортной компании.</p>
-                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-mb-40">Да, типичным, почти анекдотичным менеджером. Утром надевал костюм, полтора часа давился в общественном транспорте (машина-то есть, но на ней в Москве далеко не уедешь), затем приходил в офис, наливал кружку отвратительного кофе, садился за компьютер и телефон, писал отчеты и отдавал указания тем бедолагам, которым не хватило образования или сообразительности подняться хотя бы до моей унылой должности.</p>
-                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-mb-40">Жизнь удалась? Жизнь провалилась! В какой-то момент я осознал, что даже если дорасту до высшего звена, то ничего, по сути, не изменится. Костюм станет подороже, а кофе получше. Вот и все. Сменить работу? Отличная идея… Только вот когда я общался с друзьями, которым, как и мне, «повезло» работать в офисе, то мне казалось, что они пересказывают мою жизнь. Все то же самое, только декорации другие.</p>
-                <img src="/images/long-arrow-bottom.svg" class="fw-mt-35" alt="">
+                <img class="start-way__quote" src="./images/quotes-1.svg" alt="">
+                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-z-index-1 fw-mt-0 fw-mb-30">Простите, я еще не представился. Меня зовут Михаил Авдеев, мне 28 лет. Родился и вырос в Москве, закончил средненький вуз, был полон амбиций и грандиозных планов, собирался покорить мир… А стал менеджером среднего звена в одной транспортной компании.</p>
+                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-z-index-1 fw-mt-0 fw-mb-30">Да, типичным, почти анекдотичным менеджером. Утром надевал костюм, полтора часа давился в общественном транспорте (машина-то есть, но на ней в Москве далеко не уедешь), затем приходил в офис, наливал кружку отвратительного кофе, садился за компьютер и телефон, писал отчеты и отдавал указания тем бедолагам, которым не хватило образования или сообразительности подняться хотя бы до моей унылой должности.</p>
+                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-z-index-1 fw-mt-0 fw-mb-30">Жизнь удалась? Жизнь провалилась! В какой-то момент я осознал, что даже если дорасту до высшего звена, то ничего, по сути, не изменится. Костюм станет подороже, а кофе получше. Вот и все. Сменить работу? Отличная идея… Только вот когда я общался с друзьями, которым, как и мне, «повезло» работать в офисе, то мне казалось, что они пересказывают мою жизнь. Все то же самое, только декорации другие.</p>
+                <img src="./images/long-arrow-bottom.svg" class="fw-mt-35" alt="">
             </div>
         </div>
     </div>
 
     <div class="envy">
         <div class="container small-container">
-            <h2 class="envy__title fw-font-normal fw-text-center fw-font-black-d fw-color-red fw-fz-65 fw-line-height-65 fw-margin-0 fw-mb-50">Потом пришла зависть</h2>
+            <h2 class="envy__title fw-font-normal fw-letter-spacing-1 fw-text-center fw-font-black-d fw-color-red fw-fz-65 fw-line-height-65 fw-margin-0 fw-mb-40">Потом пришла зависть</h2>
 
-            <div class="envy__content fw-width-1-1 fw-relative fw-flex fw-flex-column fw-flex-center fw-flex-middle fw-font-circle-r fw-fz-17">
-                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-mb-40">И тогда у меня появилась зависть. Я не знаю, белая она была или черная. Не важно. Факт в том, что я завидовал людям, которые стали сами себе хозяевами, которые обрели полную финансовую свободу и независимость, которые позволяли себе все то, чего никогда не смогу позволить себе я. Не смогу, если так и останусь на прежних позициях.</p>
-                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-mb-40">Я завидовал не только их доходам, машинам, квартирам и прочим земным благам. Я завидовал их чувствам, ощущениям. Тому, что они никому ничем не обязаны. Я завидовал их свободе.</p>
-                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-mb-40">И я решил изменить свою жизнь. Я решил найти свой секрет успеха. И я его нашел.</p>
-                <img src="/images/quotes-2.svg" class="fw-mt-35" alt="">
+            <div class="envy__content fw-width-1-1 fw-relative fw-flex fw-flex-column fw-flex-left fw-flex-top fw-font-circle-r fw-fz-17">
+                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-z-index-1 fw-mb-30">И тогда у меня появилась зависть. Я не знаю, белая она была или черная. Не важно. Факт в том, что я завидовал людям, которые стали сами себе хозяевами, которые обрели полную финансовую свободу и независимость, которые позволяли себе все то, чего никогда не смогу позволить себе я. Не смогу, если так и останусь на прежних позициях.</p>
+                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-z-index-1 fw-mb-30">Я завидовал не только их доходам, машинам, квартирам и прочим земным благам. Я завидовал их чувствам, ощущениям. Тому, что они никому ничем не обязаны. Я завидовал их свободе.</p>
+                <p class="start-way__description fw-line-height-30 fw-letter-spacing-1 fw-mt-0 fw-z-index-1 fw-mb-30">И я решил изменить свою жизнь. Я решил найти свой секрет успеха. И я его нашел.</p>
+                <img src="./images/quotes-2.svg" class="envy__quote fw-mt-35" alt="">
             </div>
 
-            <div class="envy__btn-wrapper fw-flex fw-flex-center fw-flex-middle"><button class="fw-color-white fw-fz-20 fw-font-circle-r">Хочу так же</button></div>
+            <div class="envy__btn-wrapper fw-flex fw-flex-center fw-flex-middle fw-mt-10"><a href="#" class="fw-width-fit-content btn red-btn fw-letter-spacing-1 fw-pl-83 fw-pr-83 fw-color-white fw-fz-20 fw-font-circle-r">Хочу так же</a></div>
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="container">
+            <div class="progress__content-wrapper">
+                <div class="fw-flex fw-flex-middle fw-flex-center fw-pb-45"><img src="./images/champion-2.svg" alt=""></div>
+                <h2 class="progress__title fw-font-black-d fw-text-center fw-font-normal fw-fz-65 fw-line-height-65 fw-letter-spacing-1 fw-color-red fw-margin-0 fw-mb-30">Вот чего я достиг</h2>
+                <p class="progress__description fw-font-circle-r fw-fz-17 fw-line-height-30 fw-letter-spacing-1 fw-margin-0 fw-text-center fw-opacity-07">
+                    Подробно о найденном мною секрете вы прочтете в книге, которую уже скачали или собираетесь скачать. А здесь я просто приведу основные свои достижения за неполные два года моей новой жизни.
+                </p>
+
+                <div class="progress__content fw-flex fw-flex-wrap fw-flex-space-between fw-flex-top">
+                    <div class="progress__content-item fw-pt-40 fw-width-1-2 fw-flex fw-flex-column fw-flex-bottom fw-flex-right fw-text-right">
+                        <img src="./images/stepper.svg" class="progress__content-item-icon" alt="">
+                        <h3 class="progress__content-item-month-title fw-font-normal fw-font-circle-b fw-fz-26 fw-margin-0 fw-letter-spacing-1 fw-mb-20">6 месяцев</h3>
+                        <h2 class="progress__content-item-title fw-letter-spacing-1 fw-font-black-d fw-fz-45 fw-line-height-45 fw-margin-0 fw-font-normal fw-color-red fw-mb-10">У меня все получилось</h2>
+                        <p class="fw-font-circle-r fw-margin-0 fw-fz-17 fw-letter-spacing-1 fw-line-height-30">Я был прав, это работает. Спустя шесть месяцев после того, как я нашел свой секрет, я смог буквально хлопнуть дверью на своей прежней работе, и сделал это от души. Я даже не забрал свою кофейную кружку с надписью «Все получится». У меня уже получилось!</p>
+                    </div>
+
+                    <div class="progress__content-item fw-width-1-2 fw-flex fw-flex-left fw-flex-middle">
+                        <img src="./images/progress/1.png" class="fw-max-width-400" alt="">
+                    </div>
+
+                    <div class="progress__content-item fw-width-1-2"></div>
+
+                    <div class="progress__content-item fw-pt-20 fw-width-1-2 fw-flex fw-flex-column fw-flex-top fw-flex-right">
+                        <img src="./images/stepper.svg" class="progress__content-item-icon" alt="">
+                        <h3 class="progress__content-item-month-title fw-font-normal fw-margin-0 fw-font-circle-b fw-fz-26 fw-letter-spacing-1 fw-mb-20">10 месяцев</h3>
+                        <h2 class="progress__content-item-title fw-letter-spacing-1 fw-font-black-d fw-margin-0 fw-fz-45 fw-line-height-45 fw-font-normal fw-color-red fw-mb-10">Начал путешествовать</h2>
+                        <p class="fw-font-circle-r fw-fz-17 fw-letter-spacing-1 fw-margin-0 fw-line-height-30">Я понял, что теперь могу зарабатывать где угодно. Что Москва – это вовсе не денежный город. Что это просто город, большой и шумный. А деньги, их источник – в тебе самом. И я начал путешествовать по миру. Путешествовать и продолжать зарабатывать</p>
+                    </div>
+
+                    <div class="progress__content-item fw-width-1-2 fw-flex fw-flex-column fw-flex-bottom fw-text-right fw-flex-right fw-pt-10">
+                        <img src="./images/stepper.svg" class="progress__content-item-icon" alt="">
+                        <h3 class="progress__content-item-month-title fw-letter-spacing-1 fw-font-normal fw-margin-0 fw-font-circle-b fw-fz-26 fw-mb-20">12 месяцев</h3>
+                        <h2 class="progress__content-item-title fw-letter-spacing-1 fw-font-black-d fw-margin-0 fw-fz-45 fw-line-height-45 fw-font-normal fw-color-red fw-mb-10">Заработал много денег</h2>
+                        <p class="fw-font-circle-r fw-fz-17 fw-letter-spacing-1 fw-margin-0 fw-line-height-30">Мой доход за год составил 140 000 долларов. Долларов! Чтобы заработать такую сумму на моей прежней работе, мне бы пришлось не вылезать из офиса 11-12 лет. Но главное, это был вовсе не предел. Совсем не предел</p>
+                    </div>
+
+                    <div class="progress__content-item fw-width-1-2 fw-flex fw-flex-column fw-flex-left fw-flex-top"></div>
+
+                    <div class="progress__content-item fw-width-1-2 fw-flex fw-flex-middle fw-flex-right">
+                        <img src="./images/progress/2.png" class="fw-max-width-400" alt="">
+                    </div>
+
+                    <div class="progress__content-item fw-width-1-2 fw-flex fw-flex-column fw-flex-left fw-flex-top">
+                        <img src="./images/stepper.svg" class="progress__content-item-icon" alt="">
+                        <h3 class="progress__content-item-month-title fw-margin-0 fw-font-normal fw-font-circle-b fw-fz-26 fw-letter-spacing-1 fw-mb-20">16 месяцев</h3>
+                        <h2 class="progress__content-item-title fw-font-black-d fw-letter-spacing-1 fw-margin-0 fw-fz-45 fw-line-height-45 fw-font-normal fw-color-red fw-mb-10">Купил квартиру без ипотеки</h2>
+                        <p class="fw-font-circle-r fw-fz-17 fw-letter-spacing-1 fw-margin-0 fw-line-height-30">Путешествие – это прекрасно, но возвращаться домой тоже нужно. Раньше мы с моей девушкой снимали жилье. Теперь мы его просто купили, и в неплохом районе. Кстати, жизнь моей девушки тоже круто изменилась. Она, как и я, ушла со своей работы и стала учиться на дизайнера интерьеров. Не ради получения профессии, а потому, что ей это нравится. Да и учитывая наши дальнейшие планы, можно сказать, что интерьеров ей предстоит оформить очень много</p>
+                    </div>
+
+                    <div class="progress__content-item fw-pt-25 fw-width-1-2 fw-flex fw-flex-column fw-flex-bottom fw-text-right fw-flex-right">
+                        <img src="./images/stepper.svg" class="progress__content-item-icon" alt="">
+                        <h3 class="progress__content-item-month-title fw-font-normal fw-margin-0 fw-font-circle-b fw-fz-26 fw-letter-spacing-1 fw-mb-20">20 месяцев</h3>
+                        <h2 class="progress__content-item-title fw-letter-spacing-1 fw-font-black-d fw-fz-45 fw-margin-0 fw-line-height-45 fw-font-normal fw-color-red fw-mb-10">Я счастлив</h2>
+                        <p class="fw-font-circle-r fw-fz-17 fw-letter-spacing-1 fw-margin-0 fw-line-height-30">Я продолжаю зарабатывать, и мой доход постоянно растет. Я свободен. Я счастлив. Но, по законам Вселенной, когда что-то получаешь, надо что-то отдать. Я отдаю свои знания, свой секрет вам. Пробуйте. Зарабатывайте. Меняйте свою жизнь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="secret fw-bg-color-gray-tint fw-pt-130 fw-pb-110">
+        <div class="container">
+            <div class="secret__content fw-text-center">
+                <h2 class="secret__title fw-font-black-d fw-text-center fw-font-normal fw-fz-65 fw-line-height-65 fw-color-red fw-letter-spacing-1 fw-margin-0 fw-mb-50">И в заключение: мой секрет универсален</h2>
+                <p class="secret__description fw-font-circle-r fw-fz-24 fw-line-height-45 fw-letter-spacing-1 fw-margin-0 fw-mb-73">
+                    Неважно, похожа ваша жизнь на мою, неважно, кем и в какой должности вы <br>
+                    работаете, в каком городе или поселке живете, сколько вам лет, есть ли у <br>
+                    вас семья. Все это не имеет ровным счетом никакого значения. Значение <br>
+                    имеет только ваше желание изменить свою жизнь. Все остальное – дело <br>
+                    техники. Почти буквально.
+                </p>
+                <p class="fw-text-center fw-fz-65 fw-line-height-65 fw-font-black-d fw-letter-spacing-1 fw-margin-0 fw-mb-40">Удачи!</p>
+                <a href="#" class="fw-width-fit-content fw-font-circle-r fw-color-white fw-fz-20 fw-line-height-30 btn red-btn fw-ml-auto fw-mr-auto fw-pl-85 fw-pr-85">Хочу так же</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div class="container">
+            <div class="js-reviews-slider fw-width-1-1 fw-flex fw-flex-center owl-theme fw-flex-top reviews__slider">
+                <div class="reviews__slide fw-width-1-1 fw-text-center">
+                    <p class="reviews__slide-description fw-font-circle-r fw-fz-32 fw-line-height-50 fw-letter-spacing-1 fw-margin-0 fw-mb-30">
+                        Вы будто про меня писали. Такой же день сурка. И очень
+                        хочется из него вырваться. Спасибо за ваш секрет.
+                        Обязательно попробую.
+                    </p>
+                    <h3 class="reviews__slide-review-author fw-font-circle-extra-b fw-line-height-45 fw-margin-0">Оксана, Нижний Новгород</h3>
+                </div>
+
+                <div class="reviews__slide fw-width-1-1 fw-text-center">
+                    <p class="reviews__slide-description fw-font-circle-r fw-fz-32 fw-line-height-50 fw-letter-spacing-1 fw-margin-0 fw-mb-30">
+                        Вы будто про меня писали. Такой же день сурка. И очень
+                        хочется из него вырваться. Спасибо за ваш секрет.
+                        Обязательно попробую.
+                    </p>
+                    <h3 class="reviews__slide-review-author fw-font-circle-extra-b fw-line-height-45 fw-margin-0">Оксана, Нижний Новгород</h3>
+                </div>
+            </div>
         </div>
     </div>
 
 
     <!-- footer block -->
-    <footer class="footer">
+    <footer class="footer fw-bg-color-red">
     <div class="container fw-flex fw-flex-column">
-      <h1>FOOTER</h1>
+      <p class="fw-color-white fw-font-black-d fw-fz-24 fw-margin-0 fw-text-center fw-line-height-30">2019 © Михаил Авдеев</p>
     </div>
 </footer>    <!-- footer block end -->
         <!-- Block content end -->
     </div>
 
-        <!-- Scripts -->
+    <div class="js-popup-overlay popup-overlay">
+    <div class="popup rules-popup fw-pt-60 fw-pl-60 fw-pr-60 fw-pb-30 fw-relative">
+        <div class="js-popup__close-btn popup__close-btn fw-pointer"><img src="./images/close-popup.svg" alt=""></div>
+
+        <h2 class="rules-popup__title fw-font-black-d fw-fz-65 fw-color-red fw-font-normal fw-margin-0 fw-mb-25 fw-width-1-1 fw-text-center">Правила пользования сайтом</h2>
+
+        <div class="rules-popup__items fw-pr-30">
+            <div class="rules-popup__item">
+                <div class="rules-popup__item-title fw-font-circle-b fw-fz-24 fw-line-height-35 fw-mb-20 fw-letter-spacing-1">1. Общие положения</div>
+                <p class="fw-font-circle-l fw-fz-17 fw-line-height-25 fw-mb-30">… (далее «Компания» или «мы») предлагает информационные услуги в сфере биржевой торговли и не предоставляет, и не предлагает никаких услуг по торговле на любых финансовых рынках. Компания оказывает услуги информационного характера, при этом не является СМИ и не нуждается в лицензировании какой-либо части предоставляемых услуг. Любые торговые и не торговые риски целиком несут пользователи сайта.</p>
+                <p class="fw-font-circle-l fw-fz-17 fw-line-height-25 fw-mb-30">При использовании любых услуг компании мы можем попросить Вас предоставить личную информацию («Личная информация»), которая будет использоваться по усмотрению администрации Компании. Мы обязуемся соблюдать конфиденциальность Ваших данных, а также обеспечивать защиту данных и неприкосновенность частной жизни.</p>
+                <p class="fw-font-circle-l fw-fz-17 fw-line-height-25 fw-mb-30">Поэтому мы предоставляем эту Политику конфиденциальности, чтобы помочь Вам понять, как мы собираем, используем, храним и защищаем вашу личную информацию с целью предложить Вам информационные услуги. Если Вы не понимаете этой Политики конфиденциальности или то, как мы обращаемся с или используем личную информацию, которую Вы предоставляете нам, то Вы можете направить свои вопросы на … и мы сделаем все возможное, чтобы ответить на Ваши вопросы в полном объеме в кратчайшие сроки.</p>
+                <p class="fw-font-circle-l fw-fz-17 fw-line-height-25 fw-mb-30">Поэтому мы предоставляем эту Политику конфиденциальности, чтобы помочь Вам понять, как мы собираем, используем, храним и защищаем вашу личную информацию с целью предложить Вам информационные услуги. Если Вы не понимаете этой Политики конфиденциальности или то, как мы обращаемся с или используем личную информацию, которую Вы предоставляете нам, то Вы можете направить свои вопросы на … и мы сделаем все возможное, чтобы ответить на Ваши вопросы в полном объеме в кратчайшие сроки.</p>
+                <p class="fw-font-circle-l fw-fz-17 fw-line-height-25 fw-mb-30">Поэтому мы предоставляем эту Политику конфиденциальности, чтобы помочь Вам понять, как мы собираем, используем, храним и защищаем вашу личную информацию с целью предложить Вам информационные услуги. Если Вы не понимаете этой Политики конфиденциальности или то, как мы обращаемся с или используем личную информацию, которую Вы предоставляете нам, то Вы можете направить свои вопросы на … и мы сделаем все возможное, чтобы ответить на Ваши вопросы в полном объеме в кратчайшие сроки.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Scripts -->
     <!--build:js js/common.js-->
 <script src="vendor/jquery.min.js"></script>
+<script src="vendor/slick.min.js"></script>
 <script src="js/app.js"></script>
 <!--endbuild-->
 </body>

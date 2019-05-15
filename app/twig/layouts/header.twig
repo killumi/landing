@@ -1,40 +1,48 @@
-<header class="header fw-pt-25 fw-pb-25">
+<header class="header">
   <div class="container">
-    <div class="header__content fw-flex fw-flex-top fw-flex-space-between">
-      <div class="header__content-left">
-        <img src="/images/champion.svg" alt="">
-        <h1 class="header__title fw-font-black-d fw-color-red fw-font-normal fw-fz-85 fw-line-height-85 fw-margin-0 fw-mb-10">Я стал богатым. Как?!!</h1>
+    <div class="header__content fw-flex fw-flex-bottom fw-flex-space-between">
+      <div class="header__content-left fw-relative">
+        <img class="header__content-left-icon-crown" src="./images/champion.svg" alt="">
+        <h1 class="header__title fw-font-black-d fw-white-space fw-letter-spacing-1 fw-color-red fw-font-normal fw-fz-85 fw-line-height-85 fw-margin-0 fw-mb-10">Я стал богатым. Как?!!</h1>
 
         <div class="header__description-wrapper fw-relative">
+          <img src="./images/triangle-1.svg" class="header__description-icon" alt="">
           <div class="header__description fw-fz-17 fw-relative fw-font-circle-r fw-ml-25 fw-pl-57 fw-pt-40 fw-pb-40 fw-pr-50 fw-bg-color-gray">
-            <span class="fw-font-circle-b">Да как ты разбогател, Миша?!!</span> Как ты всего за один год ушел с работы и купил квартиру без ипотеки, а теперь
-            еще и присматриваешь недвижимость за границей? Как у тебя получается по полгода путешествовать? Как ты
-            умудряешься так отлично выглядеть? Как ты сумел достичь всего того, чего так и не удалось достичь нам?
+            <div class="fw-opacity-07 fw-letter-spacing-1">
+              {{ showModal }}
+              <span class="fw-font-circle-b">Да как ты разбогател, Миша?!!</span> Как ты всего за один год ушел с работы и<br>
+              купил квартиру без ипотеки, а теперь еще и присматриваешь <br>
+              недвижимость за границей? Как у тебя получается по полгода <br>
+              путешествовать? Как ты умудряешься так отлично выглядеть? Как ты <br>
+              сумел достичь всего того, чего так и не удалось достичь нам?
+            </div>
           </div>
 
-          <p class="fw-font-circle-l fw-fz-17 fw-line-height-25 fw-letter-spacing-1 fw-mt-30 fw-mb-30">
+          <p class="header__description-second  fw-font-circle-l fw-fz-17 fw-line-height-25 fw-letter-spacing-1 fw-mt-30 fw-mb-30">
             Эти вопросы я очень часто слышал от своих друзей и знакомых, которые хорошо помнят, каким я был раньше –
             обычным бесперспективным менеджером среднего звена. Теперь они знают мой секрет.
           </p>
+
+          <img class="header__dots" src="./images/dots-bg.png" alt="">
         </div>
 
-        <p class="fw-font-circle-r fw-fz-24 fw-line-height-35 fw-letter-spacing-1 fw-margin-0">
-          Я готов поделиться этим секретом и с вами. Он в книге, которую вы <span class="fw-fz-24 fw-font-circle-b">можете скачать на этой страничке.</span>
+        <p class="header__description-tertiary fw-font-circle-r fw-fz-24 fw-line-height-35 fw-letter-spacing-1 fw-margin-0">
+          Я готов поделиться этим секретом и с вами. Он в книге,<br> которую вы <span class="fw-fz-24 fw-font-circle-b">можете скачать на этой страничке.</span>
         </p>
 
-        <div class="fw-flex fw-flex-middle fw-flex-right">
-          <p class="fw-font-black-d fw-fz-36 fw-line-height-35 fw-margin-0 fw-mr-12 fw-color-red">Листай вниз</p>
-          <img src="/images/vertical-arrow-bottom.svg" alt="">
+        <div class="header__slide-down fw-flex fw-flex-middle fw-flex-right">
+          <p class="fw-font-black-d fw-fz-36 fw-line-height-35 fw-margin-0 fw-mr-12 fw-color-red fw-letter-spacing-1">Листай вниз</p>
+          <img src="./images/vertical-arrow-bottom.svg" alt="">
         </div>
       </div>
 
 
       <div class="header__content-right">
-        <img src="/images/man.png" alt="">
+        <img class="header__content-right-image" src="./images/man.png" alt="">
         <div class="header__online-users-counter fw-flex fw-flex-center fw-flex-middle">
-          <p class="fw-font-black-d fw-color-white fw-fz-26">Сейчас на сайте</p>
-          <span class="fw-font-circle-b fw-color-red fw-fz-28">55</span>
-          <span class="fw-color-white">чел.</span>
+          <p class="fw-font-black-d fw-color-white fw-line-height-30 fw-fz-26 fw-margin-0 fw-white-space">Сейчас на сайте</p>
+          <p class="js-online-counter fw-font-circle-b fw-color-red  fw-line-height-30 fw-fz-28 fw-margin-0 fw-ml-13 fw-mr-7">55</p>
+          <p class="fw-color-white fw-margin-0 fw-font-circle-r fw-line-height-22">чел.</p>
         </div>
       </div>
     </div>

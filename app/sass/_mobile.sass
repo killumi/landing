@@ -1,5 +1,227 @@
-@media only screen and (max-width : 1500px)
+@media only screen and (max-width : 1300px)
+  .container
+    width: 100%
+  .header
+    overflow: hidden
 
+@media only screen and (max-width : 1050px)
+  .container
+    &.middle-container, &.small-container
+      width: 100%
+
+  .advantages
+    &__content-wrapper
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__left-title, &__right-title
+      text-align: center
+    &__left, &__right
+      width: 80%
+
+  .slick-dots
+    right: inherit
+    top: inherit
+    bottom: -75px
+    display: flex
+    li button
+      margin: 0 10px
+
+  .reviews
+    padding: 150px 0
+    &__slider
+      padding: 0
+
+  .feedback
+    &__content
+      flex-direction: column
+      align-items: center
+    &__content-left, &__content-right
+      width: 100%
+      padding: 0
+      display: flex
+      justify-content: center
+      align-items: center
+    &__book-triangle, &__book-arrow, &__dots-bg
+      display: none
+
+  .feedback-form
+    width: 65%
+
+  .start-way, .envy
+    padding-left: 40px
+    padding-right: 40px
+
+  .progress
+    &__content-item
+      &:nth-child(odd)
+        padding-right: 50px
+      &:nth-child(even)
+        padding-left: 50px
+
+@media only screen and (max-width : 915px)
+  .rules-popup
+    &__title
+      font-size: 40px
+  .header
+    padding-top: 50px
+    &__description
+      margin-left: 0
+      max-width: 500px
+      min-width: auto
+      padding: 20px
+      &:after
+        width: 30px
+        height: 30px
+    &__description-second
+      margin-top: 50px
+    &__content-left-icon-crown
+      position: inherit
+      top: 0
+      transform: translateX(-50%)
+    &__slide-down
+      justify-content: flex-start
+      padding-right: 0
+    &__description-icon
+      display: none
+    &__content-left
+      width: 100%
+    &__title
+      width: 100%
+      text-align: center
+  .progress
+    &__content
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      &:before
+        display: none
+    &__content-item
+      margin-bottom: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      &-icon
+        position: inherit !important
+        right: inherit !important
+        left: inherit !important
+        top: 0 !important
+      p
+        text-align: center
+      &:nth-child(odd)
+        padding-right: 0
+      &:nth-child(even)
+        padding-left: 0
+  .btn.red-btn
+    font-size: 16px
+    padding: 0 50px
+    white-space: nowrap
+@media only screen and (max-width : 750px)
+  .popup__close-btn
+    right: 0
+    top: 0
+  .rules-popup__items::-webkit-scrollbar
+    width: 4px
+  .rules-popup
+    padding: 20px
+    &__items
+      padding-right: 10px
+    &__title
+      line-height: 45px
+      font-size: 40px
+  .advantages
+    padding: 50px 0
+    &__left-title, &__right-title
+      font-size: 45px
+    &__left, &__right
+      width: 97%
+    &__right-list-item
+      &:before
+        left: 0
+
+  .progress
+    &__content-item
+      width: 100%
+    &__content-item-title
+      text-align: center
+
+  .start-way__title, .envy__title
+    font-size: 45px
+
+  .feedback-form
+    width: 100%
+    padding: 25px
+
+  .secret
+    padding-top: 60px
+    padding-bottom: 40px
+    &__title
+      font-size: 45px
+    &__description
+      font-size: 16px
+      line-height: 35px
+
+  .reviews
+    padding-top: 50px
+    padding-bottom: 100px
+    &__slide-review-author
+      font-size: 16px
+    &__slide-description
+      font-size: 18px
+      line-height: 35px
+  .header
+    &__content
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &__content-right
+      position: relative
+      left: 0
+      width: 100%
+    &__slide-down
+      padding-bottom: 20px
+      align-items: center
+      justify-content: center
+    &__description-tertiary
+      font-size: 16px
+      line-height: 26px
+    &__online-users-counter
+      position: relative
+      right: auto
+      left: auto
+      bottom: 0
+    &__title
+      font-size: 50px
+      white-space: normal
+    &__description
+      max-width: 100%
+      width: 100%
+      &:after
+        display: none
+    &__content-right-image
+      display: none
+    &__description-second
+      margin: 15px 0
+
+  .start-way, .envy
+    padding-left: 20px
+    padding-right: 20px
+    overflow: hidden
+    &__description
+      font-size: 16px
+
+@media only screen and (max-width : 500px)
+  .advantages
+    &__right-title
+      margin-bottom: 0
+
+  .fw-max-width-400
+    max-width: 70%
+  .btn.red-btn
+    width: 100%
+  .progress
+    &__content-item p
+      font-size: 16px
 //_____________________________________________________________________________________________
 
 @media only screen and (min-width : 550px)
